@@ -16,6 +16,7 @@ namespace ListOfProcess
 		public override string ToString()
 		{
 			return $"{Id} {FileName} {StartTime?.ToString() ?? "null"} {StopTime?.ToString() ?? "null"} {Params}";
+
 		}
 	}
 }
