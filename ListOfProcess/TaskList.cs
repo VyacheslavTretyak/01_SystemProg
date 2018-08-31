@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace ListOfProcess
 {
-	public partial class Form1 : Form
+	public partial class TaskList : Form
 	{
-		public Form1()
+		public TaskList(List<ProcessItem> list)
 		{
 			InitializeComponent();
+			listBox1.DataSource = list;
+
 		}
 	}
 }
